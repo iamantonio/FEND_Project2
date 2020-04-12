@@ -33,6 +33,7 @@ for (item of sections) {
   let id = item.id;
   let dataNav = item.dataset.nav;
 
+  // Building the nav bar
   a.href = `#${id}`;
   a.className = `menu__link`;
   a.id = `${id}-link`;
@@ -41,20 +42,19 @@ for (item of sections) {
   li.appendChild(a);
   fragment.appendChild(li);
 }
-
+// Append the nav bar to the header section
 navbarList.appendChild(fragment);
 
 // Set sections as active
-
+// Event listener to listen for a scroll event when the user scrolls.
 window.addEventListener("scroll", (e) => {
   let navLinks = document.querySelectorAll("nav ul li a");
   let fromTop = window.scrollY;
 
+  // Loop to iterate each section and then check if it's at the top of the scroll window.
   navLinks.forEach((link) => {
     let sectionLink = document.querySelector(link.hash);
-
-    console.log(link);
-
+    // Conditional based on the coordinates of the section will set both section and nav section to active.
     if (
       sectionLink.offsetTop <= fromTop &&
       sectionLink.offsetTop + sectionLink.offsetHeight > fromTop
