@@ -3,7 +3,7 @@
 ## Table of Contents
 
 * [Instructions](#instructions)
-* [Deployment] (#deployment)
+* [Deployment](#deployment)
 
 ## Instructions
 
