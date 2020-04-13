@@ -49,7 +49,7 @@ navbarList.appendChild(fragment);
 // Event listener to listen for a scroll event when the user scrolls.
 window.addEventListener("scroll", (e) => {
   let navLinks = document.querySelectorAll("nav ul li a");
-  let fromTop = window.scrollY;
+  let fromTop = window.scrollY + 400;
 
   // Loop to iterate each section and then check if it's at the top of the scroll window.
   navLinks.forEach((link) => {

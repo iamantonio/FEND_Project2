@@ -98,6 +98,8 @@ section {
     transition: ease 0.3s all;
 }
 
+
+
 /* Header Styles */
 .page__header {
     background: #fff;
@@ -130,6 +132,16 @@ section {
     .landing__container {
         max-width: 50em;
         padding: 4em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 0.7em;
+    }
+
+    .navbar__menu ul {
+        text-align: center;
     }
 }
 
